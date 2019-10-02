@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text='@string/hello_world'
-        android:textColor="@color/colorAccent"
+         android:textStyle="bold"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -20,14 +20,15 @@
 
     <ImageView
         android:id="@+id/iv-flag"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:contentDescription="Flag"
+        android:layout_width="@dimen/dimen_symetric"
+        android:layout_height="@dimen/dimen_symetric"
         android:src="@drawable/flaggi"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/flaggi"
         tools:srcCompat="@drawable/flaggi" />
 
